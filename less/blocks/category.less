@@ -1,0 +1,47 @@
+.category {
+  margin-bottom: 40px;
+}
+
+.category__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category__item {
+  width: 49%;
+  margin-bottom: 16px;
+  box-shadow: 0px 4px 5px rgba(53, 52, 84, 0.14);
+  background: #FFFFFF;
+  border-radius: 4px;
+  overflow: hidden;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    box-shadow: none;
+    .transition();
+  }
+}
+
+.category__link {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.category__img {
+  width: 58px;
+  height: 58px;
+  margin-right: 47px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+}

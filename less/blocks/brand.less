@@ -1,0 +1,58 @@
+.brand {
+  margin-bottom: 40px;
+}
+
+.brand__prev,
+.brand__next {
+  display: none;
+}
+
+.brand__slider {
+  margin-right: -30px;
+  
+  .swiper-wrapper {
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+.brand__slide {
+  width: 229px;
+  height: auto;
+  box-sizing: border-box;
+  margin-right: 24px;
+  margin-bottom: 14px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    border-color: @red;
+    .transition();
+  }
+}
+
+.brand__link {
+  display: flex;
+  align-items: center;
+  padding: 4px 9px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.brand__img {
+  width: 81px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-right: 3px;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 50px;
+  }
+}
