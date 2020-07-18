@@ -1461,3 +1461,199 @@ h2 a:active,
           flex: 0 0 auto;
   max-height: 50px;
 }
+.footer {
+  padding-bottom: 80px;
+  color: #fff;
+  background-color: #575B71;
+}
+.footer__bottom,
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__top {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 23px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 30px;
+}
+.footer__block {
+  line-height: 26px;
+}
+.footer__block a {
+  display: block;
+}
+.footer__block a:hover,
+.footer__block a:active {
+  text-decoration: underline;
+}
+.footer__block--contacts {
+  text-align: right;
+}
+.footer__phone {
+  margin-bottom: 50px;
+}
+.footer__phone a {
+  font-size: 18px;
+}
+.footer__phone p {
+  margin: 0;
+}
+.footer__address {
+  margin-bottom: 50px;
+}
+.social p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.social__item {
+  margin-left: 10px;
+}
+.social__item:hover .social__link,
+.social__item:active .social__link {
+  border-color: #E30E36;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__item:hover .social__link svg,
+.social__item:active .social__link svg {
+  fill: #E30E36;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.social__link svg {
+  display: block;
+  fill: #fff;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.payment p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.payment__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.payment__item {
+  width: 64px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 14px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+.payment__item img {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-height: 25px;
+}
+.subscribe p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.subscribe__input {
+  width: 438px;
+  height: 45px;
+  padding: 0 18px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+.subscribe__input::-webkit-input-placeholder {
+  color: #828282;
+  opacity: 1;
+}
+.subscribe__input::-moz-placeholder {
+  color: #828282;
+  opacity: 1;
+}
+.subscribe__input:-ms-input-placeholder {
+  color: #828282;
+  opacity: 1;
+}
+.subscribe__input::-ms-input-placeholder {
+  color: #828282;
+  opacity: 1;
+}
+.subscribe__input::placeholder {
+  color: #828282;
+  opacity: 1;
+}
+.subscribe__btn {
+  width: 196px;
+  height: 45px;
+  margin-left: 14px;
+}
