@@ -31,7 +31,7 @@
     </symbol>
   </svg>
   
-  <header class="header">
+  <header class="header" id="top">
     <div class="header__top">
       <div class="wrapper">
         <div class="header__city">Рязань</div>
@@ -408,11 +408,93 @@
           <section class="catalog">
             <p class="title-2">Подборка товаров <a href="#">Смотреть все</a></p>
             <div class="catalog__btns">
-              <button type="button" class="catalog__btn catalog__btn--" title=""></button>
-              <button type="button" class="catalog__btn catalog__btn--" title=""></button>
-              <button type="button" class="catalog__btn catalog__btn--" title=""></button>
+              <button type="button" class="catalog__btn catalog__btn--tile catalog__btn--active" title="Плитка">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.34091 1.41052V1.41061V7.6803C8.34091 7.93545 8.325 8.16232 8.30112 8.34091H0.789769C0.765893 8.16232 0.75 7.93545 0.75 7.6803V1.41061C0.75 1.15546 0.765893 0.928586 0.789769 0.75H8.30121C8.32507 0.928565 8.34094 1.1554 8.34091 1.41052Z" stroke-width="1.5"></path>
+                  <path d="M8.34091 12.3196V12.3197V18.5894C8.34091 18.8445 8.325 19.0714 8.30112 19.25H0.789769C0.765893 19.0714 0.75 18.8445 0.75 18.5894V12.3197C0.75 12.0645 0.765893 11.8377 0.789769 11.6591H8.30121C8.32507 11.8377 8.34094 12.0645 8.34091 12.3196Z" stroke-width="1.5"></path>
+                  <path d="M19.2501 12.3196V12.3197V18.5894C19.2501 18.8445 19.2342 19.0714 19.2103 19.25H11.6989C11.6751 19.0714 11.6592 18.8445 11.6592 18.5894V12.3197C11.6592 12.0645 11.6751 11.8377 11.6989 11.6591H19.2104C19.2343 11.8377 19.2501 12.0645 19.2501 12.3196Z" stroke-width="1.5"></path>
+                  <path d="M19.2501 1.41052V1.41061V7.6803C19.2501 7.93545 19.2342 8.16232 19.2103 8.34091H11.6989C11.6751 8.16232 11.6592 7.93545 11.6592 7.6803V1.41061C11.6592 1.15546 11.6751 0.928586 11.6989 0.75H19.2104C19.2343 0.928565 19.2501 1.1554 19.2501 1.41052Z" stroke-width="1.5"></path>
+                </svg>
+              </button>
+              <button type="button" class="catalog__btn catalog__btn--table" title="Таблица">
+                <svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.70455 0.846272V0.846366V4.60818C4.70455 4.64147 4.70405 4.67364 4.70315 4.70455H0.751394C0.75049 4.67364 0.75 4.64147 0.75 4.60818V0.846366C0.75 0.813071 0.75049 0.780904 0.751394 0.75H4.70316C4.70406 0.780875 4.70455 0.813011 4.70455 0.846272Z" stroke-width="1.5"></path>
+                  <path d="M4.70455 8.11898V8.11907V11.8809C4.70455 11.9142 4.70405 11.9463 4.70315 11.9773H0.751394C0.75049 11.9463 0.75 11.9142 0.75 11.8809V8.11907C0.75 8.08578 0.75049 8.05361 0.751394 8.02271H4.70316C4.70406 8.05358 4.70455 8.08572 4.70455 8.11898Z" stroke-width="1.5"></path>
+                  <path d="M4.70455 15.3917V15.3918V19.1536C4.70455 19.1869 4.70405 19.2191 4.70315 19.25H0.751394C0.75049 19.2191 0.75 19.1869 0.75 19.1536V15.3918C0.75 15.3585 0.75049 15.3263 0.751394 15.2954H4.70317C4.70406 15.3263 4.70455 15.3584 4.70455 15.3917Z" stroke-width="1.5"></path>
+                  <path d="M27.4318 0.846019V0.846366V4.60818C27.4318 4.6486 27.4254 4.6808 27.4179 4.70455H8.94562C8.93809 4.6808 8.93176 4.6486 8.93176 4.60818V0.846366C8.93176 0.805945 8.93809 0.773747 8.94562 0.75H27.418C27.4255 0.773681 27.4318 0.805762 27.4318 0.846019Z" stroke-width="1.5"></path>
+                  <path d="M27.4318 8.11872V8.11907V11.8809C27.4318 11.9213 27.4254 11.9535 27.4179 11.9773H8.94562C8.93809 11.9535 8.93176 11.9213 8.93176 11.8809V8.11907C8.93176 8.07865 8.93809 8.04645 8.94562 8.02271H27.418C27.4255 8.04639 27.4318 8.07847 27.4318 8.11872Z" stroke-width="1.5"></path>
+                  <path d="M27.4318 15.3914V15.3918V19.1536C27.4318 19.194 27.4254 19.2262 27.4179 19.25H8.94562C8.93809 19.2262 8.93176 19.194 8.93176 19.1536V15.3918C8.93176 15.3514 8.93809 15.3192 8.94562 15.2954H27.4181C27.4255 15.3191 27.4318 15.3512 27.4318 15.3914Z" stroke-width="1.5"></path>
+                </svg>
+              </button>
+              <button type="button" class="catalog__btn catalog__btn--line" title="Список">
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21.2498 0.845989V0.846366V4.60818C21.2498 4.65207 21.2398 4.68427 21.23 4.70455H0.951364C0.941663 4.68428 0.931641 4.65209 0.931641 4.60818V0.846366C0.931641 0.802458 0.941663 0.770268 0.951364 0.75H21.2303C21.2399 0.770211 21.2498 0.802272 21.2498 0.845989Z" stroke-width="1.5"></path>
+                  <path d="M21.2498 8.11869V8.11907V11.8809C21.2498 11.9248 21.2398 11.957 21.23 11.9773H0.951364C0.941663 11.957 0.931641 11.9248 0.931641 11.8809V8.11907C0.931641 8.07516 0.941663 8.04297 0.951364 8.02271H21.2303C21.2399 8.04292 21.2498 8.07498 21.2498 8.11869Z" stroke-width="1.5"></path>
+                  <path d="M21.2498 15.3914V15.3918V19.1536C21.2498 19.1975 21.2398 19.2297 21.23 19.25H0.951364C0.941663 19.2297 0.931641 19.1975 0.931641 19.1536V15.3918C0.931641 15.3479 0.941663 15.3157 0.951364 15.2954H21.2303C21.2399 15.3156 21.2498 15.3476 21.2498 15.3914Z" stroke-width="1.5"></path>
+                  </svg>
+              </button>
             </div>
             <ul class="catalog__list">
+              <li class="catalog__item">
+                <div class="catalog__labels">
+                  <div class="catalog__label">Хит</div>
+                  <div class="catalog__label catalog__label--new">Новинки</div>
+                  <div class="catalog__label catalog__label--action">Акции</div>
+                </div>
+                <a href="#" class="catalog__img">
+                  <img src="img/images/img-1.jpg" alt="Монолитный режущий инструмент">
+                </a>
+                <div class="catalog__name">
+                  <p class="catalog__title"><a href="#">Монолитный режущий инструмент</a></p>
+                  <div class="catalog__brand"><span>Бренд: </span><a href="#">Shurka</a></div>
+                  <div class="catalog__articul">Арт : потво424</div>
+                  <div class="catalog__userbtns">
+                    <a href="#" class="catalog__userbtn catalog__userbtn--active">
+                      <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <use href="#icon-like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="catalog__userbtn">
+                      <svg width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg">
+                        <use href="#icon-compare"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <form action="#" class="catalog__form">
+                  <div class="catalog__info">
+                    <p class="catalog__color">Цвет</p>
+                    <select class="catalog__select">
+                      <option value="1" selected="">Синий</option>
+                      <option value="2">Красный</option>
+                      <option value="3">Черный</option>
+                    </select>
+                    <p class="catalog__presense">В наличие</p>
+                    <p class="catalog__presense catalog__presense--no catalog__hidden">Отсутствует</p>
+                  </div>
+                  <div class="catalog__price">
+                    <span class="catalog__oldprice">12 430 руб</span>
+                    <span class="catalog__newprice">12 430 руб</span>
+                  </div>
+                  <div class="catalog__buttons">
+                    <a href="#" class="btn catalog__buy">Купить</a>
+                    <div class="shop__number catalog__number">
+                      <button type="button" class="shop__num shop__num--minus">
+                        <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                          <use href="#icon-down"></use>
+                        </svg>
+                      </button>
+                      <input type="text" class="shop__value" value="1">
+                      <button type="button" class="shop__num shop__num--plus">
+                        <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                          <use href="#icon-down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <a href="#" class="btn-border catalog__click">Купить в 1 клик</a>
+                  </div>
+                </form>
+              </li>
               
             </ul>
           </section>
@@ -685,7 +767,7 @@
     </div>
   </footer>
   
-  <a href="#" class="btn-top" title="Наверх">
+  <a href="#top" class="btn-top" title="Наверх">
     <svg width="16" height="26" viewBox="0 0 16 26" xmlns="http://www.w3.org/2000/svg">
       <path d="M9 26L9 3.83L14.59 9.42L16 8L8 9.5399e-08L9.5399e-08 8L1.41 9.41L7 3.83L7 26L9 26Z"></path>
     </svg>
