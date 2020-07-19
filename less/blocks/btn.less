@@ -14,7 +14,7 @@
   
   &:hover,
   &:active {
-    opacity: 0.75;
+    background-color: #575B71;
     .transition();
   }
 }
@@ -37,5 +37,26 @@
     border-color: @red;
     color: @red;
     .transition();
+  }
+}
+
+.btn-top {
+  position: fixed;
+  z-index: 100;
+  left: ~"calc(50% + 700px)";
+  bottom: 382px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 4px;
+  
+  svg {
+    display: block;
+    width: 16px;
+    height: 26px;
+    fill: #575B71;
   }
 }

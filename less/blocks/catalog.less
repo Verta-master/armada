@@ -1,0 +1,279 @@
+.catalog {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.catalog__btns {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.catalog__btn {
+  margin-left: 20px;
+  
+  svg {
+    stroke: #E0E0E0;
+    .transition();
+  }
+  
+  &:hover,
+  &:active,
+  &--active {
+    svg {
+      stroke: @red;
+      .transition();
+    }
+  }
+}
+
+.catalog__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -11px;
+}
+
+.catalog__item {
+  position: relative;
+  width: 238px;
+  margin-right: 11px;
+  margin-bottom: 11px;
+  padding: 17px 12px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.catalog__img {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 200px;
+  }
+}
+
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  
+  a {
+    font-size: 13px;
+    line-height: 20px;
+    color: #4F4F4F;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.catalog__brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #4F4F4F;
+  
+  span {
+    color: #BDBDBD;
+  }
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.catalog__articul {
+  margin-bottom: 11px;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.catalog__color {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #4F4F4F;
+}
+
+.catalog__select {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 12px;
+  padding-left: 12px;
+  color: #4F4F4F;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  appearance: none;
+  background-image: url(../img/icons/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 10px 6px;
+  outline: none;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.catalog__labels {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  z-index: 10;
+}
+
+.catalog__label {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 56px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1;
+  background-color: #FFD803;
+  border-radius: 2px;
+  
+  &--new {
+    background-color: #AEBDE4;
+  }
+  
+  &--action {
+    background-color: #FF7B94;
+  }
+}
+
+.catalog__presense {
+  position: relative;
+  padding-left: 24px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #BDBDBD;
+  font-size: 13px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &--no::before {
+    background-image: url(../img/icons/cross-red.svg);
+  }
+}
+
+.catalog__hidden {
+  display: none;
+}
+
+.catalog__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+}
+
+.catalog__oldprice {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.catalog__newprice {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.catalog__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__buy {
+  width: 110px;
+  height: 38px;
+  margin-bottom: 8px;
+}
+
+.catalog__number {
+  margin-bottom: 8px;
+}
+
+.catalog__click {
+  width: 130px;
+  height: 38px;
+}
+
+.catalog__userbtns {
+  position: absolute;
+  right: 12px;
+  bottom: 17px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.catalog__userbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 3px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  .transition();
+  
+  svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #EDEDED;
+    .transition();
+  }
+  
+  &:hover,
+  &:active,
+  &--active {
+    background-color: #575B71;
+    border-color: #575B71;
+    .transition();
+    
+    svg {
+      fill: #fff;
+      .transition();
+    }
+  }
+}
