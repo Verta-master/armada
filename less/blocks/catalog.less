@@ -42,6 +42,8 @@
 .catalog__item {
   position: relative;
   width: 238px;
+  display: flex;
+  flex-direction: column;
   margin-right: 11px;
   margin-bottom: 11px;
   padding: 17px 12px;
@@ -49,6 +51,10 @@
   border: 1px solid #EDEDED;
   border-radius: 4px;
   overflow: hidden;
+}
+
+.catalog__form {
+  margin-top: auto;
 }
 
 .catalog__img {
@@ -275,5 +281,165 @@
       fill: #fff;
       .transition();
     }
+  }
+}
+
+.catalog__list--table {
+  margin-right: 0;
+  
+  .catalog__item {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding: 14px 12px;
+  }
+  .catalog__img {
+    width: 182px;
+    height: 183px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .catalog__name {
+    width: 192px;
+    height: 100%;
+    margin-right: 20px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .catalog__userbtns {
+    position: static;
+    justify-content: flex-start;
+    margin-top: auto;
+  }
+  .catalog__userbtn {
+    margin-left: 0;
+    margin-right: 9px;
+  }
+  .catalog__brand {
+    display: block;
+  }
+  .catalog__form {
+    margin-top: 0;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  .catalog__buttons {
+    width: 147px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .catalog__number {
+    order: 1;
+    margin-bottom: 10px;
+  }
+  .catalog__buy {
+    order: 2;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .catalog__click {
+    order: 3;
+    width: 100%;
+  }
+  .catalog__price {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 190px;
+  }
+  .catalog__info {
+    width: 164px;
+    margin-right: 40px;
+  }
+  .catalog__title {
+    margin-bottom: 21px;
+  }
+  .catalog__brand {
+    margin-bottom: 8px;
+  }
+}
+
+.catalog__list--line {
+  margin-right: 0;
+  
+  .catalog__item {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 15px;
+    padding: 12px;
+  }
+  .catalog__img {
+    display: none;
+  }
+  .catalog__name {
+    position: relative;
+    width: 270px;
+    margin-right: 14px;
+    padding-right: 60px;
+    padding-top: 25px;
+  }
+  .catalog__userbtns {
+    top: 6px;
+    bottom: auto;
+    right: 0;
+    flex-direction: column;
+  }
+  .catalog__userbtn {
+    margin-bottom: 12px;
+  }
+  .catalog__brand {
+    display: block;
+  }
+  .catalog__form {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .catalog__labels {
+    top: 6px;
+    left: 7px;
+  }
+  .catalog__buttons {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 292px;
+    height: 86px;
+  }
+  .catalog__number {
+    order: 1;
+    margin-bottom: 0;
+  }
+  .catalog__buy {
+    order: 2;
+    width: 147px;
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+  .catalog__click {
+    order: 3;
+    width: 147px;
+    margin-left: auto;
+  }
+  .catalog__price {
+    width: 180px;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .catalog__info {
+    width: 164px;
+    margin-right: 40px;
+  }
+  .catalog__form {
+    margin-top: 0;
   }
 }
