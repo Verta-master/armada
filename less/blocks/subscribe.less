@@ -14,6 +14,7 @@
 .subscribe__input {
   width: 438px;
   height: 45px;
+  max-width: 100%;
   padding: 0 18px;
   background: #FFFFFF;
   border: 1px solid #EDEDED;
@@ -29,4 +30,11 @@
   width: 196px;
   height: 45px;
   margin-left: 14px;
+  
+  &:hover,
+  &:active {
+    border: 1px solid #fff;
+    color: #fff;
+    .transition();
+  }
 }
