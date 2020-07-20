@@ -30,6 +30,15 @@ if (window.innerWidth < 1270) {
   })
 }
 
+if (window.innerWidth < 766) {
+  $('.header__menu-btn').click(function() {
+    $('.header__list').slideToggle();
+  });
+  $('.footer__title').click(function() {
+    $(this).next().slideToggle();
+  });
+}
+
 //Scroll to top
 $(window).scroll(function(){
   if ((window.pageYOffset || document.documentElement.scrollTop ||document.body.scrollTop) >= 100) {
