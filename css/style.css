@@ -2288,7 +2288,7 @@ h2 a:active,
   transition: ease-out 0.3s;
 }
 .menu {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .menu__btn {
   display: none;
@@ -2469,15 +2469,20 @@ span.pages__link {
 }
 .filter {
   margin-bottom: 20px;
-  padding: 25px 30px;
-  background-color: #FFFFFF;
-  border: 1px solid #EDEDED;
-  border-radius: 4px;
 }
 .filter .checkbox__label {
   margin-bottom: 3px;
   margin-top: 0;
   padding-left: 40px;
+}
+.filter__form {
+  padding: 25px 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+.filter__open {
+  display: none;
 }
 .filter__title {
   display: block;
@@ -2723,9 +2728,11 @@ span.pages__link {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
   }
+  .filter__open,
   .menu__btn {
     display: block;
   }
+  .filter__form,
   .menu__list {
     display: none;
     margin-top: 20px;

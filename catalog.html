@@ -530,6 +530,7 @@
           </nav>
           
           <div class="filter">
+            <button type="button" class="btn-border filter__open">Фильтр</button>
             <form action="#" class="filter__form">
               <div class="filter__field">
                 <button type="button" class="filter__title">
@@ -1279,11 +1280,15 @@
     });
   </script>
   
-  <!-- Filter drop btns -->
+  <!-- Filter -->
   <script>
     $('.filter__title').click(function() {
       $(this).next().slideToggle();
       $(this).toggleClass('filter__title--top');
+    });
+    
+    $('.filter__open').click(function() {
+      $('.filter__form').slideToggle();
     });
   </script>
 </body>
