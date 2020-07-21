@@ -1,0 +1,35 @@
+.pages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.pages__link {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1;
+  border: 1px solid #EDEDED;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  .transition();
+}
+
+a.pages__link {
+  &:hover,
+  &:active {
+    color: @red;
+    border-color: @red;
+    .transition();
+  }
+}
+
+span.pages__link {
+  border-color: @red;
+}

@@ -143,6 +143,11 @@
     border: none;
     background-color: transparent;
   }
+  
+  &--sorting {
+    width: 188px;
+    margin-bottom: 14px;
+  }
 }
 
 .catalog__labels {
@@ -441,5 +446,30 @@
   }
   .catalog__form {
     margin-top: 0;
+  }
+}
+
+.catalog__wrap {
+  position: relative;
+}
+
+.catalog__more {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-size: 14px;
+  background: #EDEDED;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @red;
+    border-color: @red;
+    .transition();
   }
 }
