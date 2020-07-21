@@ -7,6 +7,7 @@
   <title>TechnoArmada</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -528,7 +529,83 @@
             </ul>
           </nav>
           
-          
+          <div class="filter">
+            <form action="#" class="filter__form">
+              <div class="filter__field">
+                <button type="button" class="filter__title">
+                  <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-down"></use>
+                  </svg>
+                  <span>Артикул</span>
+                </button>
+                <div class="filter__drop">
+                  <input type="text" class="filter__input">
+                </div>
+              </div>
+              <div class="filter__field">
+                <button type="button" class="filter__title">
+                  <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-down"></use>
+                  </svg>
+                  <span>Цена</span>
+                </button>
+                <div class="filter__drop">
+                  <div class="filter__wrap">
+                    <input type="text" id="amount-min" class="filter__price">
+                    <span>-</span>
+                    <input type="text" id="amount-max" class="filter__price">
+                  </div>
+                  <div class="filter__range">
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__field">
+                <button type="button" class="filter__title">
+                  <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-down"></use>
+                  </svg>
+                  <span>Цвет</span>
+                </button>
+                <div class="filter__drop">
+                  <input type="checkbox" id="checkbox11" class="checkbox" checked>
+                  <label for="checkbox11" class="checkbox__label">Color 1</label>
+                  <input type="checkbox" id="checkbox12" class="checkbox">
+                  <label for="checkbox12" class="checkbox__label">Color 2</label>
+                  <input type="checkbox" id="checkbox13" class="checkbox">
+                  <label for="checkbox13" class="checkbox__label">Color 3</label>
+                </div>
+              </div>
+              <div class="filter__field">
+                <button type="button" class="filter__title">
+                  <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-down"></use>
+                  </svg>
+                  <span>Производитель</span>
+                </button>
+                <div class="filter__drop">
+                  <input type="checkbox" id="checkbox1" class="checkbox" checked>
+                  <label for="checkbox1" class="checkbox__label">Хозтоварищь</label>
+                  <input type="checkbox" id="checkbox2" class="checkbox">
+                  <label for="checkbox2" class="checkbox__label">Зуберка</label>
+                  <input type="checkbox" id="checkbox3" class="checkbox">
+                  <label for="checkbox3" class="checkbox__label">ШурумБурм</label>
+                  <input type="checkbox" id="checkbox4" class="checkbox">
+                  <label for="checkbox4" class="checkbox__label">Бум</label>
+                  <input type="checkbox" id="checkbox5" class="checkbox">
+                  <label for="checkbox5" class="checkbox__label">ЗВЕРЬ</label>
+                  <input type="checkbox" id="checkbox6" class="checkbox">
+                  <label for="checkbox6" class="checkbox__label">Крепкий сон</label>
+                  <input type="checkbox" id="checkbox7" class="checkbox">
+                  <label for="checkbox7" class="checkbox__label">Калатушкин</label>
+                  <input type="checkbox" id="checkbox8" class="checkbox">
+                  <label for="checkbox8" class="checkbox__label">ЕдимРосию</label>
+                </div>
+              </div>
+              <button type="submit" class="btn filter__btn">Найти</button>
+              <a href="#" class="btn-border filter__clear">Сбросить</a>
+            </form>
+          </div>
         </aside>
         
         <div class="wrapper__content">
@@ -1173,6 +1250,9 @@
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
+  <script src="js/range.js"></script>
   
   <!-- Catalog view switcher -->
   <script>
@@ -1196,6 +1276,14 @@
       $(this).addClass('catalog__btn--active');
       $('.catalog__list').removeClass('catalog__list--table');
       $('.catalog__list').removeClass('catalog__list--line');
+    });
+  </script>
+  
+  <!-- Filter drop btns -->
+  <script>
+    $('.filter__title').click(function() {
+      $(this).next().slideToggle();
+      $(this).toggleClass('filter__title--top');
     });
   </script>
 </body>
