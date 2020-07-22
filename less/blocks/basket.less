@@ -30,6 +30,28 @@
   }
 }
 
+.basket__table {
+  margin-top: -4px;
+  
+  td:last-child {
+    padding-right: 10px;
+  }
+  td:nth-child(5) {
+    width: 210px;
+  }
+  td:nth-child(4) {
+    width: 160px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  td:nth-child(3) {
+    width: 35%;
+  }
+  td:nth-child(2) {
+    width: 260px;
+  }
+}
+
 .basket__img {
   display: block;
   width: 88px;
@@ -87,6 +109,8 @@
   align-items: center;
   
   svg {
+    width: 15px;
+    height: 15px;
     fill: #EDEDED;
   }
   
@@ -106,7 +130,7 @@
 .basket__promo {
   width: 520px;
   max-width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   padding: 39px 38px;
   background-color: #FFFFFF;
   border: 1px solid #EDEDED;
@@ -136,11 +160,15 @@
 .basket__block {
   width: 400px;
   margin-left: auto;
-  margin-bottom: 24px;
-  padding: 35px 45px;
+  margin-bottom: 20px;
+  padding: 20px 45px;
   background-color: #FFFFFF;
   border: 1px solid #EDEDED;
   border-radius: 4px;
+}
+
+.basket__bottom .basket__block {
+  padding: 35px 45px;
 }
 
 .basket__total {
@@ -167,6 +195,10 @@
 }
 
 .basket__delivery {
+  td {
+    padding: 25px 35px;
+  }
+  
   td:last-child {
     font-weight: bold;
     font-size: 22px;
@@ -177,6 +209,10 @@
 //    width: 376px;
     line-height: 22px;
   }
+  
+  td:first-child {
+    width: 40%;
+  }
 }
 
 .basket__radio {
@@ -184,6 +220,7 @@
 }
 
 .basket__label {
+  display: block;
   position: relative;
   padding-left: 67px;
   
@@ -213,6 +250,11 @@
   background-color: #fff;
   border-top: 1px solid #EDEDED;
   border-bottom: 1px solid #EDEDED;
+  
+  .review__message {
+    height: 190px;
+    min-height: 190px;
+  }
 }
 
 .basket__btn {
