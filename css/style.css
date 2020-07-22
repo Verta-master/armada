@@ -2754,23 +2754,25 @@ span.pages__link {
 }
 .card__prev,
 .card__next {
-  width: 20px;
-  height: 84px;
+  width: 20px !important;
+  height: 84px !important;
   margin-top: 0;
-  top: 0;
+  top: 0 !important;
   outline: none;
   background-image: url(../img/icons/arrow-right.svg);
   background-repeat: no-repeat;
-  background-size: 10px 16px;
+  background-size: 10px 16px !important;
   background-position: center;
+  border: 0  !important;
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 .card__prev {
-  left: -10px;
+  left: -10px !important;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 .card__next {
-  right: -10px;
+  right: -10px !important;
 }
 .card__rating {
   float: right;
@@ -3123,6 +3125,26 @@ span.pages__link {
   .catalog__list--line .catalog__userbtns {
     top: 30px;
   }
+  .catalog__next {
+    right: 0;
+  }
+  .catalog__prev {
+    left: auto;
+    right: 60px;
+  }
+  .catalog__next,
+  .catalog__prev {
+    width: 50px;
+    height: 50px;
+    top: -60px;
+    margin-top: 0;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #EDEDED;
+    background-image: url(../img/icons/arrow-right.svg);
+    background-position: center;
+    background-size: 12px 18px;
+  }
 }
 @media (max-width: 1270px) {
   .header__phone {
@@ -3218,6 +3240,9 @@ span.pages__link {
     border-top: 1px solid #ededed;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .catalog__slider {
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 1022px) {
@@ -3319,6 +3344,18 @@ span.pages__link {
   .header__info {
     right: 0;
     left: auto;
+  }
+  .card__wrap,
+  .tabs__columns {
+    display: block;
+  }
+  .card__info,
+  .card__slider,
+  .tabs__field table {
+    width: 100%;
+  }
+  .card__slider {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 766px) {
@@ -3456,6 +3493,7 @@ span.pages__link {
   }
 }
 @media (max-width: 480px) {
+  .card__item,
   .footer__block,
   .catalog__item {
     width: 100%;
@@ -3475,5 +3513,26 @@ span.pages__link {
   }
   .subscribe__input {
     width: 180px;
+  }
+  .gallery-top {
+    height: 300px;
+  }
+  .card__img img {
+    max-height: 300px;
+  }
+  .card__benefits {
+    display: block;
+  }
+  .tabs__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__field,
+  .tabs__name,
+  .tabs__name a {
+    width: 100%;
+    margin-right: 0;
   }
 }
