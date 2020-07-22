@@ -1,0 +1,200 @@
+.basket__delivery,
+.basket__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  
+  td {
+    padding: 28px 30px;
+    background-color: #fff;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    
+    &:first-child {
+      border-left: 1px solid #EDEDED;
+      border-radius: 4px 0 0 4px;
+    }
+    
+    &:last-child {
+      border-right: 1px solid #EDEDED;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+  
+  .shop__number {
+    width: 94px;
+  }
+}
+
+.basket__img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  text-align: center;
+}
+
+.basket__title {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    color: @red;
+    text-decoration: none;
+  }
+}
+
+.basket__brand {
+  margin: 0;
+  color: #BDBDBD;
+  font-size: 13px;
+  line-height: 18px;
+  
+  a {
+    color: #333;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.basket__articul {
+  color: #BDBDBD;
+  font-size: 12px;
+}
+
+.basket__sum {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.basket__remove {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  svg {
+    fill: #EDEDED;
+  }
+  
+  &:hover svg,
+  &:active svg {
+    fill: @red;
+  }
+}
+
+.basket__total,
+.basket__promo,
+.basket__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basket__promo {
+  width: 520px;
+  max-width: 100%;
+  padding: 39px 38px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+
+.basket__input {
+  width: 295px;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 15px;
+  color: #828282;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.basket__codebtn {
+  width: 142px;
+  height: 45px;
+}
+
+.basket__block {
+  width: 400px;
+  margin-left: auto;
+  padding: 35px 45px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+
+.basket__total {
+  align-items: flex-end;
+  
+  span {
+    font-size: 18px;
+    color: #BDBDBD;
+  }
+}
+
+.basket__price {
+  text-align: right;
+}
+
+.basket__oldprice {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+
+.basket__newprice {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.basket__delivery {
+  td:last-child {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: right;
+  }
+  
+  td:nth-child(2) {
+//    width: 376px;
+    line-height: 22px;
+  }
+}
+
+.basket__radio {
+  display: none;
+}
+
+.basket__label {
+  position: relative;
+  padding-left: 67px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 50%;
+  }
+}
+
+.basket__radio:checked + .basket__label::before {
+  background-color: #F5F5F5;
+  border: 7px solid #E30E36;
+}
