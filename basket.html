@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TechnoArmada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <svg style="display:none">
+    <symbol id="icon-like">
+      <path d="M18.3432 1.84804C16.1682 -0.616247 12.6281 -0.616247 10.4524 1.84748L10 2.35909L9.54813 1.84772C7.37223 -0.61634 3.83258 -0.616061 1.65668 1.84772C0.58832 3.05763 0 4.66246 0 6.36612C0 8.07034 0.58832 9.67489 1.65684 10.8853L9.51695 19.7703C9.65215 19.9235 9.82621 19.9998 10 19.9998C10.1738 19.9998 10.3476 19.9232 10.483 19.77L18.3432 10.8853C19.4114 9.67517 20 8.07039 20 6.3664C20 4.66246 19.4114 3.05791 18.3432 1.84804ZM17.3761 9.67378L10 18.012L2.6241 9.67406C1.83695 8.78283 1.40352 7.60803 1.40352 6.3664C1.40352 5.12477 1.83695 3.94997 2.6241 3.05875C3.44516 2.1285 4.52352 1.66368 5.60211 1.66368C6.68094 1.66368 7.75977 2.12906 8.58082 3.0593L9.51648 4.11741C9.78734 4.42405 10.2124 4.42405 10.4833 4.11741L11.4192 3.05875C13.0615 1.19853 15.7336 1.19853 17.3759 3.05875C18.1628 3.95002 18.5965 5.12477 18.5965 6.3664C18.5965 7.60803 18.1628 8.78255 17.3761 9.67378Z"></path>
+    </symbol>
+    <symbol id="icon-compare">
+      <path d="M18.0905 11.4755C19.6431 11.4755 20.9064 12.684 20.9064 14.1694L20.9064 17.3061C20.9064 18.7915 19.6431 19.9999 18.0904 19.9999C16.5377 19.9999 15.2745 18.7915 15.2745 17.3061L15.2745 14.1694C15.2745 12.684 16.5377 11.4755 18.0905 11.4755ZM16.9078 17.3061C16.9078 17.9299 17.4383 18.4374 18.0904 18.4374C18.7425 18.4374 19.2731 17.9299 19.2731 17.3061L19.2731 14.1694C19.2731 13.5455 18.7425 13.038 18.0904 13.038C17.4383 13.038 16.9078 13.5456 16.9078 14.1694L16.9078 17.3061Z"></path>
+      <path d="M10.4531 -2.66052e-07C12.0058 -1.19352e-07 13.269 1.20848 13.269 2.69386L13.269 17.3061C13.269 18.7915 12.0058 20 10.4531 20C8.9004 20 7.63716 18.7915 7.63716 17.3061L7.63716 2.69386C7.63716 1.20847 8.9004 -4.12752e-07 10.4531 -2.66052e-07ZM9.27046 17.3061C9.27046 17.93 9.801 18.4375 10.4531 18.4375C11.1052 18.4375 11.6357 17.93 11.6357 17.3061L11.6357 2.69386C11.6357 2.07 11.1052 1.5625 10.4531 1.5625C9.801 1.5625 9.27046 2.07 9.27046 2.69386L9.27046 17.3061Z"></path>
+      <path d="M2.81592 5.73773C4.36859 5.73773 5.63184 6.94621 5.63184 8.43161L5.63183 17.3061C5.63183 18.7915 4.36859 20 2.81587 20C1.2632 20 -4.90092e-05 18.7915 -4.88584e-05 17.3061L-4.79572e-05 8.4316C-4.78064e-05 6.94621 1.2632 5.73773 2.81592 5.73773ZM1.63327 17.3061C1.63327 17.9299 2.16381 18.4375 2.81591 18.4375C3.46798 18.4375 3.99852 17.9299 3.99852 17.3061L3.99852 8.4316C3.99852 7.80774 3.46798 7.30024 2.81587 7.30024C2.16381 7.30024 1.63327 7.80774 1.63327 8.4316L1.63327 17.3061Z"></path>
+    </symbol>
+    <symbol id="icon-basket">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.84806 0.050087C4.70913 0.0742411 4.43972 0.119906 4.24931 0.151637C2.96139 0.366176 1.83886 1.58187 1.58243 3.03976C1.53504 3.30907 1.51145 3.53398 1.38722 4.90192C1.35928 5.20956 1.31397 5.6901 1.28649 5.96978C1.259 6.24946 1.21354 6.73 1.18545 7.03765C1.15736 7.3453 1.11189 7.82584 1.08441 8.10552C1.05693 8.3852 1.01146 8.86574 0.983374 9.17339C0.955285 9.48103 0.909819 9.96157 0.882336 10.2413C0.854854 10.5209 0.809387 11.0015 0.781299 11.3091C0.729669 11.8745 0.681019 12.3751 0.578769 13.394C0.547852 13.7017 0.502334 14.1822 0.47753 14.4619C0.396498 15.376 0.326933 16.1308 0.276111 16.6485C0.248629 16.9281 0.202303 17.4201 0.173104 17.7417C0.143904 18.0634 0.0977809 18.5325 0.0706524 18.7842C-0.263529 21.882 0.579476 23.4815 2.77679 23.9188C3.43237 24.0492 22.0364 24.0125 22.4791 23.8799C24.565 23.255 25.2302 21.8598 24.9326 18.7333C24.906 18.4537 24.8603 17.9617 24.831 17.64C24.7817 17.0988 24.7558 16.8311 24.6241 15.5043C24.5978 15.2386 24.5532 14.7695 24.5251 14.4619C24.497 14.1542 24.4516 13.6737 24.4241 13.394C24.3966 13.1143 24.3511 12.6338 24.323 12.3261C24.2949 12.0185 24.2495 11.5379 24.222 11.2583C24.1945 10.9786 24.149 10.498 24.121 10.1904C24.0929 9.88276 24.0474 9.40222 24.0199 9.12253C23.9924 8.84286 23.947 8.36232 23.9189 8.05467C23.8908 7.74702 23.8453 7.26648 23.8178 6.9868C23.7904 6.70712 23.7449 6.22658 23.7168 5.91893C23.6887 5.61129 23.6433 5.13074 23.6159 4.85107C23.5886 4.57139 23.5444 4.0794 23.5178 3.75777C23.3827 2.12612 22.7356 1.03268 21.5521 0.43635C21.1099 0.213522 21.0086 0.187383 20.0445 0.0475435C19.5966 -0.0174438 5.22281 -0.0150529 4.84806 0.050087ZM20.3985 2.2115C20.7005 2.31503 21.1005 2.67674 21.2447 2.97645C21.3707 3.23848 21.4116 3.54008 21.5953 5.56298C21.6233 5.87062 21.6686 6.35117 21.6961 6.63084C21.7235 6.91052 21.769 7.39106 21.7971 7.69871C21.8252 8.00636 21.8707 8.4869 21.8981 8.76658C21.9256 9.04626 21.9711 9.5268 21.9992 9.83445C22.0273 10.1421 22.0727 10.6226 22.1002 10.9023C22.1277 11.182 22.1732 11.6625 22.2012 11.9702C22.2293 12.2778 22.2748 12.7584 22.3023 13.038C22.3298 13.3177 22.3752 13.7983 22.4033 14.1059C22.4314 14.4136 22.4769 14.8941 22.5044 15.1738C22.5318 15.4535 22.5773 15.934 22.6054 16.2416C22.6335 16.5493 22.6791 17.0298 22.7067 17.3095C22.7343 17.5892 22.7783 18.0583 22.8045 18.352C22.8307 18.6456 22.8803 19.149 22.9146 19.4707C23.0799 21.0167 22.8485 21.5713 21.9234 21.8466C21.4926 21.9748 3.92655 22.014 3.32017 21.8882C2.43852 21.7051 1.92009 21.0806 2.01421 20.3151C2.03179 20.1723 2.06857 19.8038 2.096 19.4961C2.12343 19.1885 2.16834 18.7079 2.19582 18.4282C2.22331 18.1486 2.26877 17.668 2.29686 17.3604C2.32495 17.0527 2.37042 16.5722 2.3979 16.2925C2.44872 15.7748 2.51828 15.02 2.59932 14.1059C2.62412 13.8262 2.66964 13.3457 2.70056 13.038C2.84499 11.5989 2.84428 11.6062 3.0023 9.85987C3.0314 9.53824 3.07768 9.04626 3.10516 8.76658C3.13264 8.4869 3.17811 8.00636 3.2062 7.69871C3.23429 7.39106 3.27975 6.91052 3.30724 6.63084C3.33472 6.35117 3.38003 5.87062 3.40797 5.56298C3.59171 3.54008 3.63258 3.23848 3.75862 2.97645C3.8977 2.68726 4.30013 2.31585 4.5841 2.21465C4.91894 2.09531 20.051 2.09231 20.3985 2.2115ZM7.9297 4.8709C7.36485 5.13329 7.34874 5.20814 7.34874 7.56665C7.34874 9.66562 7.36647 9.87299 7.60658 10.5789C9.32331 15.6261 16.486 15.1398 17.5807 9.90172C17.6918 9.36962 17.6884 5.66651 17.5764 5.3968C17.2333 4.57037 16.055 4.57037 15.712 5.3968C15.6467 5.55408 15.6338 5.86595 15.6338 7.28697C15.6338 10.7806 14.4471 12.3886 12.1429 12.0173C10.0251 11.6759 9.3705 10.5572 9.36837 7.27589C9.36736 5.71934 9.35878 5.54442 9.274 5.35957C9.04127 4.85203 8.44045 4.63363 7.9297 4.8709Z"></path>
+    </symbol>
+    <symbol id="icon-cross">
+      <path d="M5.14758 4L8.13867 1.00859C8.22095 0.926239 8.26635 0.816378 8.26648 0.699232C8.26648 0.582022 8.22108 0.472031 8.13867 0.389814L7.87656 0.127748C7.79415 0.0452062 7.6843 0 7.56703 0C7.44996 0 7.34011 0.0452062 7.2577 0.127748L4.26661 3.11897L1.27539 0.127748C1.19311 0.0452062 1.08319 0 0.965992 0C0.848918 0 0.739 0.0452062 0.656723 0.127748L0.394479 0.389814C0.223813 0.560492 0.223813 0.838103 0.394479 1.00859L3.38563 4L0.394479 6.99128C0.312138 7.07376 0.266805 7.18362 0.266805 7.30077C0.266805 7.41791 0.312138 7.52777 0.394479 7.61019L0.656658 7.87225C0.738935 7.95473 0.848918 8 0.965927 8C1.08313 8 1.19305 7.95473 1.27532 7.87225L4.26654 4.88097L7.25763 7.87225C7.34004 7.95473 7.44989 8 7.56697 8H7.5671C7.68424 8 7.79409 7.95473 7.8765 7.87225L8.13861 7.61019C8.22089 7.52784 8.26628 7.41791 8.26628 7.30077C8.26628 7.18362 8.22089 7.07376 8.13861 6.99135L5.14758 4Z"></path>
+    </symbol>
+    <symbol id="icon-down">
+      <path d="M9.85999 1.05L8.74699 -1.25211e-08L5.08999 3.45L1.43299 -9.48028e-08L0.319985 1.05L5.08999 5.55L9.85999 1.05Z"></path>
+    </symbol>
+  </svg>
+  
+  <header class="header" id="top">
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__city">Рязань</div>
+        <nav class="header__menu">
+          <button type="button" class="header__menu-btn">&laquo;</button>
+          <ul class="header__list">
+            <li class="header__item"><a href="#">О компании</a></li>
+            <li class="header__item"><a href="#">Доставка</a></li>
+            <li class="header__item"><a href="#">Оплата</a></li>
+            <li class="header__item"><a href="#">Новости</a></li>
+            <li class="header__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__main">
+      <div class="wrapper">
+        <div class="header__wrap">
+          <a href="#" class="logo">
+            <img src="img/images/logo.png" alt="Logo">
+          </a>
+          <div class="header__contacts">
+            <a href="tel:+78007004343" class="header__phone">8 (800) 700-43-43</a>
+            <button type="button" class="header__more" title="Дополнительная информация">
+              <svg width="26" height="6" viewBox="0 0 26 6" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="3" r="3"></circle>
+                <circle cx="13" cy="3" r="3"></circle>
+                <circle cx="23" cy="3" r="3"></circle>
+              </svg>
+            </button>
+            <div class="header__info">
+              <div class="header__columns">
+                <div class="header__column">
+                  <div class="header__block">
+                    <p>Пн-Вс 09:00 – 24:00<br>Вс 12:00 – 18:00</p>
+                  </div>
+                  <div class="header__block">
+                    <p class="header__title">Ростов-на-Дону</p>
+                    <a href="tel:+78633332038">(863) 333-20-38</a>
+                    <a href="tel:+78633332375">(863) 333-23-75</a>
+                    <a href="tel:+78633332392">(863) 333-23-92</a>
+                  </div>
+                  <div class="header__block">
+                    <p class="header__title">Санкт-Петербург</p>
+                    <a href="tel:+78126158014">(812) 615-80-14</a>
+                  </div>
+                  <div class="header__block">
+                    <p class="header__title">Казань</p>
+                    <a href="tel:+78435005502">(843) 500-55-02</a>
+                  </div>
+                </div>
+                <div class="header__column">
+                  <div class="header__block">
+                    <p class="header__title">Адрес</p>
+                    <address>Москва-Север<br>Склад выдачи:	ул. Лобненская, 18г</address>
+                  </div>
+                  <div class="header__block">
+                    <p class="header__title">Почта</p>
+                    <a href="mailto:nfo@technoarmada.ru">nfo@technoarmada.ru</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__user">
+            <a href="#" class="header__userbtn header__userbtn--active">
+              <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <use href="#icon-like"></use>
+              </svg>
+              <span>2</span>
+            </a>
+            <a href="#" class="header__userbtn">
+              <svg width="21" height="20" viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg">
+                <use href="#icon-compare"></use>
+              </svg>
+              <span>0</span>
+            </a>
+            <div class="shop">
+              <a href="#" class="header__basket">
+                <div class="header__icon">
+                  <svg width="25" height="24" viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-basket"></use>
+                  </svg>
+                  <div class="header__number">3</div>
+                </div>
+                <b>Корзина</b>
+                <span class="header__price">142 534 руб</span>
+              </a>
+              <div class="shop__drop">
+                <form action="#" class="shop__form">
+                  <table class="shop__table">
+                    <tr>
+                      <td>
+                        <a href="#" class="shop__img">
+                          <img src="img/images/img-1.jpg" alt="Монолитный режущий инструмент">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#" class="shop__title">Монолитный режущий инструмент</a>
+                      </td>
+                      <td>
+                        <div class="shop__number">
+                          <button type="button" class="shop__num shop__num--minus">
+                            <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                              <use href="#icon-down"></use>
+                            </svg>
+                          </button>
+                          <input type="text" class="shop__value" value="1">
+                          <button type="button" class="shop__num shop__num--plus">
+                            <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                              <use href="#icon-down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="shop__price">12 430 руб</div>
+                      </td>
+                      <td>
+                        <button type="button" class="shop__remove">
+                          <svg width="9" height="8" viewBox="0 0 9 8" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <a href="#" class="shop__img">
+                          <img src="img/images/img-1.jpg" alt="Монолитный режущий инструмент">
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#" class="shop__title">Монолитный режущий инструмент</a>
+                      </td>
+                      <td>
+                        <div class="shop__number">
+                          <button type="button" class="shop__num shop__num--minus">
+                            <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                              <use href="#icon-down"></use>
+                            </svg>
+                          </button>
+                          <input type="text" class="shop__value" value="1">
+                          <button type="button" class="shop__num shop__num--plus">
+                            <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                              <use href="#icon-down"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="shop__price">12 430 руб</div>
+                      </td>
+                      <td>
+                        <button type="button" class="shop__remove">
+                          <svg width="9" height="8" viewBox="0 0 9 8" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#icon-cross"></use>
+                          </svg>
+                        </button>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="shop__total">
+                    <span>Итого:</span>
+                    <div class="shop__sum">
+                      <div class="shop__discount">12 430 руб</div>
+                      <div class="shop__final">12 430 руб</div>
+                      <a href="#" class="btn shop__btn">Оформить заказ</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__wrap header__wrap--bottom">
+          <a href="#" class="header__catalog">
+            <svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 0.875C21 0.35 20.65 0 20.125 0H0.875C0.35 0 0 0.35 0 0.875V2.625C0 3.15 0.35 3.5 0.875 3.5H20.125C20.65 3.5 21 3.15 21 2.625V0.875Z"></path>
+              <path d="M21 7.875C21 7.35 20.65 7 20.125 7H0.875C0.35 7 0 7.35 0 7.875V9.625C0 10.15 0.35 10.5 0.875 10.5H20.125C20.65 10.5 21 10.15 21 9.625V7.875Z"></path>
+              <path d="M21 14.875C21 14.35 20.65 14 20.125 14H0.875C0.35 14 0 14.35 0 14.875V16.625C0 17.15 0.35 17.5 0.875 17.5H20.125C20.65 17.5 21 17.15 21 16.625V14.875Z"></path>
+            </svg>
+            <span>Каталог товаров</span>
+          </a>
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Поиск по товарам">
+            <button type="submit" class="search__btn">
+              <svg width="23" height="23" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.1286 0C4.54386 0 0 4.54386 0 10.1286C0 15.7137 4.54386 20.2573 10.1286 20.2573C15.7137 20.2573 20.2573 15.7137 20.2573 10.1286C20.2573 4.54386 15.7137 0 10.1286 0ZM10.1286 18.3874C5.57481 18.3874 1.86991 14.6825 1.86991 10.1287C1.86991 5.57486 5.57481 1.86991 10.1286 1.86991C14.6825 1.86991 18.3874 5.57481 18.3874 10.1286C18.3874 14.6825 14.6825 18.3874 10.1286 18.3874Z"></path>
+                <path d="M22.726 21.4039L17.3656 16.0435C17.0004 15.6783 16.4089 15.6783 16.0436 16.0435C15.6783 16.4085 15.6783 17.0006 16.0436 17.3656L21.404 22.726C21.5866 22.9086 21.8257 22.9999 22.065 22.9999C22.304 22.9999 22.5434 22.9086 22.726 22.726C23.0913 22.361 23.0913 21.7689 22.726 21.4039Z"></path>
+              </svg>
+            </button>
+          </form>
+          <div class="header__cabinet">
+            <div class="header__person">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2 14.8C18.5 13.4 20 10.9 20 8.00002C20 3.6 16.4 0 12 0C7.60003 0 3.99998 3.6 3.99998 8.00002C3.99998 10.9 5.49996 13.4 7.79995 14.8C3.79997 16.3 0.799969 19.8 0 24H2.00002C3 19.4 7.10004 16 12 16C16.9 16 21 19.4 22 24H24C23.2 19.7 20.2 16.2 16.2 14.8ZM6 8.00002C6 4.70004 8.70002 2.00002 12 2.00002C15.3 2.00002 18 4.70004 18 8.00002C18 11.3 15.3 14 12 14C8.70002 14 6 11.3 6 8.00002Z"></path>
+              </svg>
+            </div>
+            <a href="#" class="header__link">Войти</a>
+            <a href="#" class="header__link">Регистрация</a>
+            
+            <div class="modal">
+              <p class="modal__title">Авторизоватся</p>
+              <form action="#" class="modal__form">
+                <label for="login" class="modal__label">Логин</label>
+                <input type="text" id="login" class="modal__input">
+                <label for="password" class="modal__label">Пароль</label>
+                <input type="password" id="password" class="modal__input">
+                <input type="checkbox" id="checkbox" class="checkbox" checked="">
+                <label for="checkbox" class="checkbox__label">Запомнить меня</label>
+                <div class="modal__line">
+                  <button type="submit" class="btn modal__btn">Войти</button>
+                  <a href="#" class="btn-border modal__reg">Зарегистрироватся</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="wrapper">
+      <nav class="breadcrumbs">
+        <a href="#" class="breadcrumbs__link">Домашная страница</a>
+        <span class="breadcrumbs__link">Каталог</span>
+      </nav>
+      
+      <section class="basket">
+        <h1 class="title">Каталог товаров</h1>
+        <form action="#" class="basket__form">
+          <table class="basket__table">
+            <tr>
+              <td>
+                <a href="#" class="basket__img">
+                  <img src="img/images/img-1.jpg" alt="Монолитный режущий инструмент">
+                </a>
+              </td>
+              <td>
+                <a href="#" class="basket__title">Монолитный режущий инструмент</a>
+                <p class="basket__brand">Бренд: <a href="#">Shurka</a></p>
+              </td>
+              <td><span class="basket__articul">Арт : потво424</span></td>
+              <td>
+                <div class="shop__number">
+                  <button type="button" class="shop__num shop__num--minus">
+                    <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#icon-down"></use>
+                    </svg>
+                  </button>
+                  <input type="text" class="shop__value" value="1">
+                  <button type="button" class="shop__num shop__num--plus">
+                    <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#icon-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+              <td><span class="basket__sum">12 430 руб</span></td>
+              <td>
+                <button type="button" class="basket__remove">
+                  <svg width="9" height="8" viewBox="0 0 9 8" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-cross"></use>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" class="basket__img">
+                  <img src="img/images/img-1.jpg" alt="Монолитный режущий инструмент">
+                </a>
+              </td>
+              <td>
+                <a href="#" class="basket__title">Монолитный режущий инструмент</a>
+                <p class="basket__brand">Бренд: <a href="#">Shurka</a></p>
+              </td>
+              <td><span class="basket__articul">Арт : потво424</span></td>
+              <td>
+                <div class="shop__number">
+                  <button type="button" class="shop__num shop__num--minus">
+                    <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#icon-down"></use>
+                    </svg>
+                  </button>
+                  <input type="text" class="shop__value" value="1">
+                  <button type="button" class="shop__num shop__num--plus">
+                    <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                      <use href="#icon-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </td>
+              <td><span class="basket__sum">12 430 руб</span></td>
+              <td>
+                <button type="button" class="basket__remove">
+                  <svg width="9" height="8" viewBox="0 0 9 8" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-cross"></use>
+                  </svg>
+                </button>
+              </td>
+            </tr>
+          </table>
+          
+          <div class="basket__bottom">
+            <div class="basket__promo">
+              <input type="text" class="basket__input" placeholder="Промокод">
+              <a href="#" class="btn basket__codebtn">Активировать</a>
+            </div>
+            <div class="basket__block">
+              <div class="basket__total">
+                <span>Итого:</span>
+                <div class="basket__price">
+                  <div class="basket__oldprice">12 430 руб</div>
+                  <div class="basket__newprice">12 430 руб</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        
+        <form action="#" class="basket__form">
+          <p class="title-2">Способы доставки</p>
+          <table class="basket__delivery">
+            <tr>
+              <td>
+                <input type="radio" id="radio1" name="radio" class="basket__radio" checked="">
+                <label for="radio1" class="basket__label">Курьер</label>
+              </td>
+              <td>Товар доставляется курьером до двери Вашего дома.<br>Стоимость 500 руб.<br>Бесплатно от суммы 6000 руб.</td>
+              <td>6790 руб</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" id="radio2" name="radio" class="basket__radio">
+                <label for="radio2" class="basket__label">Почта России</label>
+              </td>
+              <td>Товар доставляется курьером до двери Вашего дома.<br>Стоимость 500 руб.<br>Бесплатно от суммы 6000 руб.</td>
+              <td>420 руб</td>
+            </tr>
+          </table>
+          <div class="basket__block">
+            <div class="basket__total">
+              <span>Итого:</span>
+              <div class="basket__price">
+                <div class="basket__oldprice">12 430 руб</div>
+                <div class="basket__newprice">12 430 руб</div>
+              </div>
+            </div>
+          </div>
+          
+          <p class="title-2">Выберите способ оплаты</p>
+          <table class="basket__delivery">
+            <tr>
+              <td>
+                <input type="radio" id="radio3" name="radio2" class="basket__radio" checked="">
+                <label for="radio3" class="basket__label">Наличные</label>
+              </td>
+              <td>Товар доставляется курьером до двери Вашего дома.<br>Стоимость 500 руб.<br>Бесплатно от суммы 6000 руб.</td>
+              <td>6790 руб</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="radio" id="radio4" name="radio2" class="basket__radio">
+                <label for="radio4" class="basket__label">Картой</label>
+              </td>
+              <td>Товар доставляется курьером до двери Вашего дома.<br>Стоимость 500 руб.<br>Бесплатно от суммы 6000 руб.</td>
+              <td>420 руб</td>
+            </tr>
+          </table>
+          <div class="basket__block">
+            <div class="basket__total">
+              <span>Итого:</span>
+              <div class="basket__price">
+                <div class="basket__oldprice">12 430 руб</div>
+                <div class="basket__newprice">12 430 руб</div>
+              </div>
+            </div>
+          </div>
+          
+          <p class="title-2">Контактные данные</p>
+          <div class="basket__wrap">
+            <div class="review__field">
+              <label for="input1" class="review__label">Имя</label>
+              <input type="text" id="input1" class="review__input" placeholder="Завр">
+            </div>
+            <div class="review__field">
+              <label for="input2" class="review__label">Телфон</label>
+              <input type="tel" id="input2" class="review__input">
+            </div>
+            <div class="review__field">
+              <label for="input3" class="review__label">Ваш Email</label>
+              <input type="email" id="input3" class="review__input" placeholder="email@mail.com">
+            </div>
+            <div class="review__field review__field--message">
+              <label for="text" class="review__label">Комментарий</label>
+              <textarea id="text" class="review__message" placeholder="email@mail.com"></textarea>
+            </div>
+          </div>
+          <div class="basket__block">
+            <div class="basket__total">
+              <span>Итого:</span>
+              <div class="basket__price">
+                <div class="basket__oldprice">12 430 руб</div>
+                <div class="basket__newprice">12 430 руб</div>
+              </div>
+            </div>
+            <button type="submit" class="btn basket__btn">Оформить заказ</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__block">
+          <p class="footer__title">Навигация</p>
+          <ul class="footer__list">
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Избраное</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Оплата</a></li>
+            <li><a href="#">Доставка</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <p class="footer__title">Категории</p>
+          <ul class="footer__list">
+            <li><a href="#">Замки</a></li>
+            <li><a href="#">Двери</a></li>
+            <li><a href="#">Наклодные замки</a></li>
+            <li><a href="#">Ключи</a></li>
+            <li><a href="#">фаскосниматели</a></li>
+            <li><a href="#">Пневматические</a></li>
+            <li><a href="#">фаскосниматели</a></li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block--phones">
+          <p class="footer__title">Контакты</p>
+          <a href="tel:+78633332038">(863) 333-20-38</a>
+          <a href="tel:+78633332375">(863) 333-23-75</a>
+          <a href="tel:+78633332392">(863) 333-23-92</a>
+          <a href="mailto:info@technoarmada.ru">info@technoarmada.ru</a>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__phone">
+            <a href="tel:+78007707999">8-800-77-07-999</a>
+            <p>(c 05:00 до 00:00)</p>
+          </div>
+          <div class="footer__address">
+            <address><span>Адрес магазина:	Москва-Север<br>Склад выдачи:	ул. Лобненская, 18г</span></address>
+          </div>
+          <div class="social">
+            <p>Присоединяйся к нам так же</p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" title="Telegram">
+                  <svg width="18" height="15" viewBox="0 0 18 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.96357 9.886L6.67001 14.074C7.09002 14.074 7.27193 13.891 7.49007 13.6712L9.45923 11.7625L13.5395 14.7932C14.2879 15.2162 14.8151 14.9935 15.017 14.095L17.6953 1.36605L17.696 1.3653C17.9334 0.243303 17.296 -0.195445 16.5669 0.0798037L0.823884 6.19302C-0.250544 6.61602 -0.234276 7.22352 0.641238 7.49877L4.66609 8.76851L14.015 2.83529C14.455 2.53979 14.855 2.70329 14.526 2.99879L6.96357 9.886Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Facebook">
+                  <svg width="8" height="15" viewBox="0 0 8 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.13125 2.49062H7.50063V0.105625C7.26438 0.073125 6.45188 0 5.50563 0C3.53125 0 2.17875 1.24187 2.17875 3.52437V5.625H0V8.29125H2.17875V15H4.85V8.29187H6.94063L7.2725 5.62563H4.84938V3.78875C4.85 3.01812 5.0575 2.49062 6.13125 2.49062Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Instagram">
+                  <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.50249 3.64844C5.37565 3.64844 3.65381 5.37216 3.65381 7.49712C3.65381 9.62396 5.37753 11.3458 7.50249 11.3458C9.62933 11.3458 11.3512 9.62208 11.3512 7.49712C11.3512 5.37028 9.62745 3.64844 7.50249 3.64844ZM7.50249 9.9952C6.12189 9.9952 5.00441 8.8771 5.00441 7.49712C5.00441 6.11714 6.12251 4.99904 7.50249 4.99904C8.88247 4.99904 10.0006 6.11714 10.0006 7.49712C10.0012 8.8771 8.88309 9.9952 7.50249 9.9952Z"></path>
+                    <path d="M10.5925 0.0471158C9.21248 -0.017258 5.79442 -0.0141331 4.41319 0.0471158C3.19946 0.10399 2.12885 0.39711 1.26574 1.26022C-0.17673 2.70269 0.0076419 4.64641 0.0076419 7.49699C0.0076419 10.4144 -0.154855 12.3132 1.26574 13.7338C2.71384 15.1812 4.68568 14.9919 7.50251 14.9919C10.3925 14.9919 11.3899 14.9937 12.4118 14.5981C13.8011 14.0587 14.8499 12.8169 14.9524 10.5863C15.0174 9.2057 15.0136 5.78827 14.9524 4.40704C14.8286 1.77396 13.4155 0.177114 10.5925 0.0471158ZM12.7768 12.7794C11.8312 13.725 10.5193 13.6406 7.48439 13.6406C4.35944 13.6406 3.10634 13.6869 2.19198 12.77C1.13887 11.7219 1.32949 10.0388 1.32949 7.48699C1.32949 4.03392 0.975125 1.54709 4.44069 1.36959C5.23693 1.34147 5.4713 1.33209 7.47564 1.33209L7.50376 1.35084C10.8343 1.35084 13.4474 1.0021 13.6043 4.46704C13.6399 5.25765 13.648 5.49515 13.648 7.49636C13.6474 10.5851 13.7062 11.8457 12.7768 12.7794Z"></path>
+                    <path d="M11.5037 4.39589C12.0004 4.39589 12.4031 3.99323 12.4031 3.49653C12.4031 2.99983 12.0004 2.59717 11.5037 2.59717C11.0069 2.59717 10.6042 2.99983 10.6042 3.49653C10.6042 3.99323 11.0069 4.39589 11.5037 4.39589Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="VKontakte">
+                  <svg width="20" height="11" viewBox="0 0 20 11" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1069 9.81131C19.0551 9.72455 18.7346 9.02805 17.1922 7.5965C15.5775 6.09746 15.7944 6.34087 17.7392 3.74889C18.9238 2.17033 19.3973 1.20632 19.2491 0.794205C19.1081 0.401371 18.2369 0.505002 18.2369 0.505002L15.3401 0.521872C15.3401 0.521872 15.1256 0.492952 14.9653 0.588148C14.8099 0.682139 14.7098 0.899041 14.7098 0.899041C14.7098 0.899041 14.2507 2.12092 13.6386 3.15964C12.348 5.35156 11.8311 5.46724 11.6202 5.33107C11.1298 5.01416 11.2527 4.05617 11.2527 3.37655C11.2527 1.25211 11.5744 0.366426 10.6249 0.137473C10.3091 0.0615577 10.0778 0.0109472 9.27163 0.0025121C8.23773 -0.008333 7.36169 0.00612713 6.86643 0.248334C6.53625 0.409806 6.282 0.770105 6.43744 0.79059C6.62904 0.815895 7.06284 0.907476 7.293 1.22078C7.59064 1.62446 7.57979 2.53304 7.57979 2.53304C7.57979 2.53304 7.75091 5.03344 7.18093 5.34433C6.78931 5.55762 6.25308 5.12261 5.10229 3.13313C4.51304 2.1149 4.06718 0.988212 4.06718 0.988212C4.06718 0.988212 3.98163 0.77854 3.82859 0.666474C3.64302 0.530307 3.38274 0.486927 3.38274 0.486927L0.62808 0.503797C0.62808 0.503797 0.214761 0.515847 0.0629296 0.695394C-0.0720317 0.855661 0.0520845 1.18583 0.0520845 1.18583C0.0520845 1.18583 2.20906 6.23122 4.65041 8.775C6.89053 11.1067 9.4331 10.9537 9.4331 10.9537H10.5851C10.5851 10.9537 10.9333 10.9151 11.1105 10.7235C11.2744 10.5476 11.2683 10.2174 11.2683 10.2174C11.2683 10.2174 11.2454 8.67137 11.9636 8.44362C12.671 8.21949 13.5795 9.93783 14.5424 10.5994C15.2702 11.0995 15.8233 10.9898 15.8233 10.9898L18.3984 10.9537C18.3984 10.9537 19.7456 10.8705 19.1069 9.81131Z"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="payment">
+          <p>К оплате принимаем</p>
+          <ul class="payment__list">
+            <li class="payment__item">
+              <img src="img/images/payment-1.png" alt="MasterCard">
+            </li>
+            <li class="payment__item">
+              <img src="img/images/payment-2.png" alt="Visa">
+            </li>
+            <li class="payment__item">
+              <img src="img/images/payment-3.png" alt="Yandex">
+            </li>
+            <li class="payment__item">
+              <img src="img/images/payment-4.png" alt="GPay">
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p>Подпишись на и узновай новости первым</p>
+          <form action="#" class="subscribe__form">
+            <input type="text" class="subscribe__input" placeholder="Ваш Email">
+            <button type="submit" class="btn subscribe__btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <a href="#top" class="btn-top" title="Наверх">
+    <svg width="16" height="26" viewBox="0 0 16 26" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 26L9 3.83L14.59 9.42L16 8L8 9.5399e-08L9.5399e-08 8L1.41 9.41L7 3.83L7 26L9 26Z"></path>
+    </svg>
+  </a>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+</body>
+</html>

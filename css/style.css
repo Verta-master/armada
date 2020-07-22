@@ -3088,6 +3088,199 @@ span.pages__link {
   width: 147px;
   height: 38px;
 }
+.basket__delivery,
+.basket__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 4px;
+}
+.basket__delivery td,
+.basket__table td {
+  padding: 28px 30px;
+  background-color: #fff;
+  border-top: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+.basket__delivery td:first-child,
+.basket__table td:first-child {
+  border-left: 1px solid #EDEDED;
+  border-radius: 4px 0 0 4px;
+}
+.basket__delivery td:last-child,
+.basket__table td:last-child {
+  border-right: 1px solid #EDEDED;
+  border-radius: 0 4px 4px 0;
+}
+.basket__delivery .shop__number,
+.basket__table .shop__number {
+  width: 94px;
+}
+.basket__img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  text-align: center;
+}
+.basket__title {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+.basket__title:hover,
+.basket__title:active {
+  color: #E30E36;
+  text-decoration: none;
+}
+.basket__brand {
+  margin: 0;
+  color: #BDBDBD;
+  font-size: 13px;
+  line-height: 18px;
+}
+.basket__brand a {
+  color: #333;
+}
+.basket__brand a:hover,
+.basket__brand a:active {
+  text-decoration: underline;
+}
+.basket__articul {
+  color: #BDBDBD;
+  font-size: 12px;
+}
+.basket__sum {
+  font-weight: bold;
+  font-size: 22px;
+}
+.basket__remove {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.basket__remove svg {
+  fill: #EDEDED;
+}
+.basket__remove:hover svg,
+.basket__remove:active svg {
+  fill: #E30E36;
+}
+.basket__total,
+.basket__promo,
+.basket__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.basket__promo {
+  width: 520px;
+  max-width: 100%;
+  padding: 39px 38px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+.basket__input {
+  width: 295px;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 15px;
+  color: #828282;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+.basket__input::-webkit-input-placeholder {
+  opacity: 1;
+}
+.basket__input::-moz-placeholder {
+  opacity: 1;
+}
+.basket__input:-ms-input-placeholder {
+  opacity: 1;
+}
+.basket__input::-ms-input-placeholder {
+  opacity: 1;
+}
+.basket__input::placeholder {
+  opacity: 1;
+}
+.basket__codebtn {
+  width: 142px;
+  height: 45px;
+}
+.basket__block {
+  width: 400px;
+  margin-left: auto;
+  padding: 35px 45px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+}
+.basket__total {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.basket__total span {
+  font-size: 18px;
+  color: #BDBDBD;
+}
+.basket__price {
+  text-align: right;
+}
+.basket__oldprice {
+  font-size: 13px;
+  text-decoration: line-through;
+}
+.basket__newprice {
+  font-weight: bold;
+  font-size: 22px;
+}
+.basket__delivery td:last-child {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: right;
+}
+.basket__delivery td:nth-child(2) {
+  line-height: 22px;
+}
+.basket__radio {
+  display: none;
+}
+.basket__label {
+  position: relative;
+  padding-left: 67px;
+}
+.basket__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFFFF;
+  border: 1px solid #EDEDED;
+  border-radius: 50%;
+}
+.basket__radio:checked + .basket__label::before {
+  background-color: #F5F5F5;
+  border: 7px solid #E30E36;
+}
 @media (max-width: 1356px) {
   .wrapper {
     width: 100%;
@@ -3520,6 +3713,7 @@ span.pages__link {
   .card__img img {
     max-height: 300px;
   }
+  .review__form,
   .card__benefits {
     display: block;
   }
@@ -3532,6 +3726,10 @@ span.pages__link {
   .card__field,
   .tabs__name,
   .tabs__name a {
+    width: 100%;
+    margin-right: 0;
+  }
+  .review__field {
     width: 100%;
     margin-right: 0;
   }
