@@ -88,24 +88,26 @@
 
 .card__prev,
 .card__next {
-  width: 20px;
-  height: 84px;
+  width: 20px !important;
+  height: 84px !important;
   margin-top: 0;
-  top: 0;
+  top: 0 !important;
   outline: none;
   background-image: url(../img/icons/arrow-right.svg);
   background-repeat: no-repeat;
-  background-size: 10px 16px;
+  background-size: 10px 16px !important;
   background-position: center;
+  border: 0  !important;
+  background-color: rgba(255,255,255,0)  !important;
 }
 
 .card__prev {
-  left: -10px;
+  left: -10px !important;
   transform: rotate(180deg);
 }
 
 .card__next {
-  right: -10px;
+  right: -10px !important;
 }
 
 .card__rating {
