@@ -1766,9 +1766,14 @@ h2 a:active,
       flex-wrap: wrap;
   margin-right: -11px;
 }
+.catalog__slide {
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.catalog__slide,
 .catalog__item {
   position: relative;
-  width: 238px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1776,13 +1781,16 @@ h2 a:active,
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 11px;
-  margin-bottom: 10px;
   padding: 15px 12px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: 1px solid #EDEDED;
   border-radius: 4px;
   overflow: hidden;
+}
+.catalog__item {
+  width: 238px;
+  margin-right: 11px;
+  margin-bottom: 10px;
 }
 .catalog__form {
   margin-top: auto;
@@ -2289,6 +2297,24 @@ h2 a:active,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.catalog__prev,
+.catalog__next {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  background-image: url(../img/icons/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 16px;
+  background-position: center;
+}
+.catalog__prev {
+  left: -30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.catalog__next {
+  right: -30px;
+}
 .menu {
   margin-bottom: 20px;
 }
@@ -2648,7 +2674,7 @@ span.pages__link {
   width: 49%;
 }
 .card__info .catalog__articul {
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 .card__info .catalog__brand {
   margin-bottom: 30px;
@@ -2739,12 +2765,12 @@ span.pages__link {
   background-position: center;
 }
 .card__prev {
-  left: 0;
+  left: -10px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 .card__next {
-  right: 0;
+  right: -10px;
 }
 .card__rating {
   float: right;
@@ -2769,11 +2795,19 @@ span.pages__link {
 .card__selects {
   margin-bottom: 35px;
 }
+.card__selects .catalog__select {
+  margin-bottom: 5px;
+}
 .card__btns {
   margin-bottom: 43px;
 }
+.card__btns .catalog__number {
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
 .card__field {
-  width: 49%;
+  width: 48%;
+  margin-right: 7px;
 }
 .card__color {
   display: block;
@@ -2802,10 +2836,6 @@ span.pages__link {
   vertical-align: baseline;
   color: #BDBDBD;
   text-decoration: line-through;
-}
-.catalog__number {
-  margin-right: 7px;
-  margin-bottom: 7px;
 }
 .card__click,
 .card__btn {
@@ -2970,7 +3000,7 @@ span.pages__link {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 .review__item {
   margin-bottom: 15px;
@@ -2985,12 +3015,12 @@ span.pages__link {
 }
 .review__name {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 18px;
 }
 .review__text {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .review__form {
   display: -webkit-box;
@@ -3013,7 +3043,7 @@ span.pages__link {
 .review__field--message {
   width: 100%;
   margin-right: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .review__label {
   display: block;
