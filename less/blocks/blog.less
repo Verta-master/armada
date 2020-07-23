@@ -19,6 +19,7 @@
   
   time {
     display: block;
+    margin-top: auto;
     color: #BDBDBD;
   }
   
@@ -37,7 +38,8 @@
 }
 
 .blog__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
@@ -67,5 +69,8 @@
 }
 
 .blog__info {
+  flex-grow: 1;
   padding: 12px 17px;
+  display: flex;
+  flex-direction: column;
 }
