@@ -1,7 +1,12 @@
 //Mobile menu
-$('.menu__btn').click(function() {
-  $('.menu__list').slideToggle();
-});
+$('.header__catalog').click(function() {
+  event.preventDefault();
+  $('.menu').slideToggle();
+})
+
+//$('.menu__btn').click(function() {
+//  $('.menu__list').slideToggle();
+//});
 
 $('.header__more').click(function(e) {
   event.preventDefault();

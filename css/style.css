@@ -3892,3 +3892,120 @@ span.pages__link {
     margin-left: 0;
   }
 }
+.tabs__table {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tabs__table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.tabs__table table th {
+  text-align: left;
+  color: #BDBDBD;
+  font-weight: 400;
+}
+.tabs__table table th:first-child {
+  padding-left: 15px;
+  border-radius: 4px 0 0 0;
+}
+.tabs__table table th:last-child {
+  border-radius: 0 4px 0 0;
+}
+.tabs__table table th,
+.tabs__table table td {
+  height: 51px;
+  padding: 10px;
+  vertical-align: middle;
+  background: #FFFFFF;
+}
+.tabs__table table th:first-child,
+.tabs__table table td:first-child {
+  width: 22%;
+}
+.tabs__table table th:nth-child(2),
+.tabs__table table td:nth-child(2),
+.tabs__table table th:nth-child(3),
+.tabs__table table td:nth-child(3) {
+  width: 24.5%;
+}
+.tabs__table table th:nth-child(4),
+.tabs__table table td:nth-child(4) {
+  width: 18%;
+}
+.tabs__table table th:last-child,
+.tabs__table table td:last-child {
+  width: 11%;
+}
+.tabs__table table td {
+  border-top: 1px solid #EDEDED;
+}
+.tabs__table table td:first-child {
+  color: #333;
+  padding-left: 15px;
+}
+.tabs__table table tr {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+.tabs__table table tr:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.tabs__table table tr:last-child {
+  border-radius: 0 0 4px 4px;
+}
+.tabs__table table tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+.tabs__table table tr:last-child td:last-child {
+  border-radius: 0 4px 0 0;
+}
+.tabs__table table tr:hover {
+  z-index: 10;
+  -webkit-box-shadow: 0px 4px 5px rgba(53, 52, 84, 0.14);
+          box-shadow: 0px 4px 5px rgba(53, 52, 84, 0.14);
+}
+.tabs__table table .catalog__number {
+  width: 94px;
+  margin-bottom: 0;
+}
+.tabs__btn {
+  width: 90px;
+}
+.menu__btn,
+.menu {
+  display: none;
+}
+@media (max-width: 1270px) {
+  .menu__list {
+    display: block;
+  }
+}
+@media (max-width: 1022px) {
+  .tabs__table table tr:first-child,
+  .tabs__table table tr {
+    display: table-row;
+  }
+}
+@media (max-width: 766px) {
+  .tabs__table {
+    overflow-x: scroll;
+  }
+  .tabs__table table {
+    width: 600px;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
