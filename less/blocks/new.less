@@ -1,0 +1,126 @@
+.tabs__table {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+    th {
+      text-align: left;
+      color: #BDBDBD;
+      font-weight: 400;
+      
+      &:first-child {
+        padding-left: 15px;
+        border-radius: 4px 0 0 0;
+      }
+      &:last-child {
+        border-radius: 0 4px 0 0;
+      }
+    }
+    
+    th,
+    td {
+      height: 51px;
+      padding: 10px;
+      vertical-align: middle;
+      background: #FFFFFF;
+      
+      &:first-child {
+        width: 22%;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: 24.5%;
+      }
+      &:nth-child(4) {
+        width: 18%;
+      }
+      &:last-child {
+        width: 11%;
+      }
+    }
+    
+    td {
+      border-top: 1px solid #EDEDED;
+      
+      &:first-child {
+        color: #333;
+        padding-left: 15px;
+      }
+    }
+    
+    tr {
+      position: relative;
+      z-index: 1;
+      display: block;
+      
+      &:first-child {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      &:last-child {
+        border-radius: 0 0 4px 4px;
+        
+        td:first-child {
+          border-radius: 0 0 0 4px;
+        }
+        td:last-child {
+          border-radius: 0 4px 0 0;
+        }
+      }
+      
+      &:hover {
+        z-index: 10;
+        box-shadow: 0px 4px 5px rgba(53, 52, 84, 0.14);
+      }
+    }
+    
+    .catalog__number {
+      width: 94px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.tabs__btn {
+  width: 90px;
+}
+
+.menu__btn,
+.menu {
+  display: none;
+}
+
+@media (max-width: 1270px) {
+  .menu__list {
+    display: block;
+  }
+}
+
+@media (max-width: 1022px) {
+  .tabs__table table tr:first-child,
+  .tabs__table table tr {
+    display: table-row;
+  }
+}
+
+@media (max-width: 766px) {
+  .tabs__table {
+    overflow-x: scroll;
+    
+    table {
+      width: 600px;
+    }
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
